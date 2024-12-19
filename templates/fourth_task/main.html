@@ -1,0 +1,16 @@
+{% extends 'fourth_task/menu.html' %}
+
+{% block title%}
+    {{  title }}
+{% endblock %}
+
+{% block pagename %}
+    <h1>{{ text }}</h1>
+{% endblock %}
+
+{% block content %}
+    <h3>Здесь может быть основной контент страницы.</h3>
+    {% block additional_content %}
+        <!-- Дополнительный контент можно добавить здесь -->
+    {% endblock %}
+{% endblock %}
